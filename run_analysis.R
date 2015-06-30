@@ -54,7 +54,7 @@
   data <- rbind(trainData, testData)
   
   ## reading features from features.txt file
-  features <- read.table("UCI HAR Dataset/features.txt")[,2]
+  features <- read.table("./data/UCI HAR Dataset/features.txt")[,2]
   
   ## renaming columns with its feature values 
   colnames(data) <- features
